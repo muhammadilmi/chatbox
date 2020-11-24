@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="ChatBox.css" rel="stylesheet" type="text/css">
+	<title>Document</title>
+	
+</head>
+<body>
+	<section class="container">
+		<h2 style="color: whitesmoke;">MIchat</h2>
+		<button class="open-button" onclick="openform()">chat</button>
+		<div class="chat-popup" id="myform">
+			<form action="" class="form-container">
+				<h1 style="color: black;">Chat</h1>
+                <label style="color: black;" for="msg"><b>Message</b></label>
+                <p><input placeholder="email@" name="msg" required></textarea></p>
+                <textarea placeholder="Type message here.." name="msg" required></textarea>
+				<button style="color: black;" type="submit" class="btn">Send</button>
+				<button style="color: black;" type="button" class="btn cancel" onclick="closeform()">Close</button>
+			</form>
+		</div>
+	</section>
+	<script>
+		function openform(){
+			document.getElementById("myform").style.display="block";
+		}
+		function closeform(){
+			document.getElementById("myform").style.display="none";
+		}
+	</script>
+</body>
+</html>
